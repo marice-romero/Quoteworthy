@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quoteworthy</title>
+  </head>
+
+  <body>
+    <h1>quoteworthy</h1>
+    <h2>all the words you love</h2>
+    <button type="button" id="logoff" style="display: none">logoff</button>
+    <hr />
+    <p id="message"></p>
+    <hr />
+    <div id="logon-register" style="display: none">
+      <button type="button" id="logon">logon</button>
+      <button type="button" id="register">register</button>
+    </div>
+    <div id="logon-div" style="display: none">
+      <form>
+        <div>
+          <label for="email">email:</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="password">password:</label>
+          <input type="password" id="password" />
+        </div>
+        <button type="button" id="logon-button">logon</button>
+        <button type="button" id="logon-cancel">cancel</button>
+      </form>
+    </div>
+    <div id="register-div" style="display: none">
+      <form>
+        <div>
+          <label for="name">username:</label>
+          <input type="text" id="username" />
+        </div>
+        <div>
+          <label for="email1">email:</label>
+          <input type="email" id="email1" />
+        </div>
+        <div>
+          <label for="password1">password:</label>
+          <input type="password" id="password1" />
+        </div>
+        <div>
+          <label for="password2">verify password:</label>
+          <input type="password" id="password2" />
+        </div>
+        <button type="button" id="register-button">register</button>
+        <button type="button" id="register-cancel">cancel</button>
+      </form>
+    </div>
+    <div id="quotes" style="display: none">
+      <p id="quotes-message"></p>
+      <table id="quotes-table" style="display: none">
+        <tr id="quotes-table-header">
+          <th>quote text</th>
+          <th>quote source</th>
+          <th>source type</th>
+          <th colspan="2"></th>
+        </tr>
+      </table>
+      <button type="button" id="add-quote">add job</button>
+    </div>
+    <div id="edit-quote" style="display: none">
+      <form>
+        <div>
+          <label for="quote-text">quote text:</label>
+          <input type="text" id="quote-text" />
+        </div>
+        <div>
+          <label for="source">quote source:</label>
+          <input type="text" id="source" />
+        </div>
+        <div>
+          <label for="source-type">source type:</label>
+          <select id="source-type">
+            <option selected disabled value="choose a source type"></option>
+            <option value="movie">movie</option>
+            <option value="TV show">TV show</option>
+            <option value="book">book</option>
+            <option value="video game">video game</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div>
+          <label for="favorite">mark as favorite</label>
+          <input type="checkbox" id="favorite" />
+        </div>
+        <button type="button" id="adding-quote">add</button>
+        <button type="button" id="edit-cancel">cancel</button>
+      </form>
+    </div>
+    <script src="./quotes.js"></script>
+  </body>
+</html>

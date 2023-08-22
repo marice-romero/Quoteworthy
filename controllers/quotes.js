@@ -75,7 +75,7 @@ const deleteQuote = async (req, res) => {
   if (!quote) {
     throw new NotFoundError(`No quote with id ${quoteId}`);
   }
-  res.status(StatusCodes.OK).send();
+  res.status(StatusCodes.OK).json({ msg: "The entry was deleted." });
 };
 
 module.exports = {
